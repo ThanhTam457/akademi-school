@@ -1,0 +1,63 @@
+@use "./styles/variables.module.scss";
+
+h1{
+  color: variables.$text;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h2{
+  color: variables.$text;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h3{
+  color: variables.$text;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h4{
+  color: variables.$text;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0px;
+}
+
+h5{
+  color: variables.$text;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0px;
+}
+
+h6{
+  color: variables.$text;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+  font-size: 10px;
+}
+
+body{
+  margin: 0px;
+  display: flex;
+  width: 100%;
+}

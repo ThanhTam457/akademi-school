@@ -1,0 +1,120 @@
+@use "./variables.module.scss";
+@use "./grid.module.scss";
+
+.menu {
+    display: flex;
+
+    &__leftMenu {
+        background-color: variables.$purple;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 20px;
+
+        &__item {
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 25px;
+            justify-content: center;
+            text-align: center;
+
+            &__logo {
+                background-color: variables.$orange;
+                border-radius: 16px;
+                font-weight: 700;
+                color: variables.$white;
+                padding: 1px 15px;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            &__name {
+                color: variables.$white;
+                font-size: 30px;
+                font-weight: 700;
+                padding-left: 10px;
+            }
+        }
+
+        &__description {
+            padding: 10px 0;
+            font-weight: lighter;
+            padding-left: 5px;
+
+            &__akademi {
+                color: variables.$white;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 700;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: left;
+            }
+
+            &__author {
+                color: variables.$white;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+
+
+        &__list {
+            padding: 30px 0;
+        }
+    }
+}
+
+.menuList {
+    margin-left: -15px;
+    &__item {
+        display: flex;
+        align-self: start;
+        align-items: center;
+        padding-bottom: 10px;
+
+        &__logo {
+            padding-right: 5px;
+        }
+
+        &__name {
+            padding-left: 3px;
+            color: variables.$grey2;
+            font-size: 16px;
+        }
+
+        &__link {
+            text-decoration: none;
+            width: 100%;
+            margin-left: 2rem;
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+            padding: 7px 20px;
+            margin-right: -20px;
+            &--active, &:hover {
+                background-color: variables.$background;
+                border-radius: 40px 0px 0px 40px;
+                box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+                //width: 100%;
+                @extend .menuList__item__link;
+                svg {
+                    path {
+                        fill: variables.$text;
+
+                    }
+                }
+                .menuList__item__name {
+                    color: variables.$text;
+                }
+                
+            }
+        }
+    }
+}

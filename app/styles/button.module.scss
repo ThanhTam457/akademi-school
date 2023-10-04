@@ -1,0 +1,36 @@
+@use "./variables.module.scss";
+
+.circleButton {
+    background-color: variables.$purple;
+    border-radius: 40px;
+    color: variables.$white;
+    font-size: 18px;
+    border: none;
+}
+
+@mixin btnStyle($bg_color, $text_color){
+    background-color: $bg_color;
+    border-radius: 40px;
+    color: $text_color;
+}
+
+.btn-filled{
+    @include btnStyle(variables.$purple, variables.$white);
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.btn-outline{
+    @include btnStyle(transparent, variables.$purple);
+    border: solid 1px variables.$purple;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.btn-purple-transparent-10 {
+    @include btnStyle(variables.$purple-transparent, variables.$purple);
+    font-weight: 700;
+}
+
+
+

@@ -1,0 +1,57 @@
+@use '../styles/variables.module.scss';
+
+.paginate {
+    & ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 2rem 0 0 0;
+        padding: 0;
+        border-radius: 0.6rem;
+        background: transparent;
+        list-style-type: none;
+        height: 7vh;
+
+        & li {
+            border-radius: 40px;
+            text-align: center;
+            padding: 0.5rem;
+            margin: 0 5px;
+            border: solid 1px variables.$grey3;
+
+            & a {
+                text-decoration: none !important;
+                padding: 0.5rem;
+                cursor: pointer;
+            }
+
+            &[class*="selected"] {
+                color: variables.$white;
+                background: variables.$purple;
+                font-weight: 600;
+                box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.14);
+
+            }
+
+            &[class*="previous"] a svg {
+                rotate: 90deg;
+                fill: variables.$grey3;
+    
+            }
+
+            &[class*="next"] a svg {
+                rotate: -90deg;
+                fill: variables.$grey3;
+            }
+        }
+
+        li[class*="previous"] {
+            border: none;
+        }
+
+        li[class*="next"] {
+            border: none;
+        }
+    }
+
+}

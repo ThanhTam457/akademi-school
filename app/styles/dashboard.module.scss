@@ -1,0 +1,103 @@
+@use '../styles//variables.module.scss';
+
+.container{
+    background-color: variables.$background;
+    width: 100%;
+   
+}
+
+.frame1__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__input{
+        width: 200px;
+        height: 40px;
+        border-radius: 40px;
+        padding-left: 10px;
+    }
+}
+
+@mixin icon($color) {
+    border-radius: 50%;
+    background-color: $color;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 12px 20px;
+}
+
+.frame2__content {
+    background-color: variables.$white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &__logo0 {
+            @include icon(variables.$purple);
+        }
+
+        &__logo1 {
+            @include icon(variables.$orange);
+        }
+
+        &__logo2 {
+            @include icon(variables.$yellow);
+        }
+
+        &__logo3 {
+            @include icon(variables.$text);
+        }
+
+        &__data {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+
+            &__title {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-size: 18px;
+                color: variables.$grey3
+            }
+
+            &__number {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.purple {
+    background-color: variables.$purple;
+}
+
+.orange {
+    background-color: variables.$orange;
+}
+
+.yellow {
+    background-color: variables.$yellow;
+}
+
+.ocean {
+    background-color: variables.$text;
+}
