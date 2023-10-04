@@ -1,6 +1,8 @@
+import LastestActivity from "../components/LastestActivity/LastestActivity";
+
 const lastest_act = () => {
     return (  
-        <div>This is the lastest activity page</div>
+        <LastestActivity/>
     );
 }
  

@@ -1,0 +1,184 @@
+@use '../styles/variables.module.scss';
+
+.container {
+    background-color: variables.$background;
+    width: 100%;
+}
+
+.frame1__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__input{
+            width: 200px;
+            height: 40px;
+            border-radius: 40px;
+            padding-left: 10px;
+            margin-right: 20px;
+            border: none;
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__icon {
+            border-radius: 50%;
+            background-color: variables.$white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        &__avatar {
+            border-radius: 50%;
+            background-color: variables.$grey2;
+            align-items: center;
+            width: 52px;
+        }
+
+        &__text {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            &__name {
+                margin: 0px;
+                white-space: nowrap;
+            }
+            &__role {
+                font-size: 10px;
+                margin: 0px;
+            }
+        }
+    }
+
+}
+
+.frame2__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: variables.$white;
+    border-radius: 20px;
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: -webkit-fill-available;
+        padding: 15px 30px;
+    }
+
+    &__listAct {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-right: 30px;
+
+            &__circles {
+                &__circle1 {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: variables.$purple;
+                }
+
+                &__circle2 {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: variables.$white;
+                    margin-top: -12px;
+                    margin-left: 4px;
+                }
+            }
+
+            &__span {
+                width: 1px;
+                min-height: 50px;
+                background-color: variables.$grey3;
+                margin-top: 4px;
+
+                &__none {
+                    display: none;
+                }
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-bottom: 15px;
+
+            &__date {
+                color: variables.$grey3;
+                padding-bottom: 5px;
+            }
+
+            &__sentence {
+                color: variables.$text;
+                font-weight: 400;
+            }
+
+            &__image {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 15px;
+
+                &__none {
+                    display: none;
+                }
+
+                &__item {
+                    width: 200px;
+                    height: 100px;
+                    border-radius: 20px;
+                    background-color: variables.$grey2;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    &__today {
+        display: flex;
+        flex-direction: column;
+        width: -webkit-fill-available;
+        padding: 10px 30px;
+    }
+
+}
