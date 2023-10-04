@@ -17,7 +17,6 @@
     align-items: center;
     padding-left: 35px;
     padding-right: 35px;
-    flex: 1 1 auto;
 
     &__left {
         display: flex;
@@ -40,7 +39,6 @@
                     height: 40px;
                     border-radius: 40px;
                     padding-left: 10px;
-                    margin-right: 20px;
                     border: none;
                 }
 
@@ -173,7 +171,6 @@
             padding: 10px;
             margin: 20px 0;
             border-radius: 20px;
-            margin-right: 10px;
             
 
             &__head {
@@ -246,10 +243,11 @@
 .frame2__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: variables.$white;
     flex: auto;
+    padding-right: 35px;
+    width: min-content;
 
     &__nav {
         display: flex;
@@ -289,6 +287,156 @@
             align-items: center;
             width: 50px;
             height: 50px;
+        }
+    }
+
+    &__child1 {
+        margin: 0px 0px 20px 32px;
+        background-color: variables.$text;
+        border-radius: 20px;
+        color: variables.$white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        padding: 20px 20px;
+        border: none;
+
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: -webkit-fill-available;
+        }
+        
+        &__title {
+            padding: 10px 0;
+        }
+        &__title, &__heading {
+            color: variables.$white;
+        }
+
+        &__heading {
+            font-weight: 500;
+        }
+
+        &__text {
+            padding: 20px 0;
+        }
+
+        &__paragraph {
+            text-wrap: wrap;
+            inline-size: 300px;
+            z-index: 1;
+        }
+
+        &__button {
+            background-color: variables.$white;
+            border: none;
+            border-radius: 40px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            cursor: pointer;
+            color: variables.$text;
+            font-size: 10px;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        margin-top: -176px;
+        margin-right: -310px;
+        overflow: hidden;
+    /* inline-size: 83px; */
+        position: relative;
+        border-radius: 0 0 20px;
+
+        &__orange {
+            background-color: #FB7D5B;
+            width: 60px;
+            height: 125px;
+            border-radius: 1000px 1000px 0 0;
+            margin-top: 31px;
+        }
+
+        &__yellow {
+            background-color: #FCC43E;
+            width: 60px;
+            height: 156px;
+            border-radius: 1000px 1000px 0 0;
+            margin-left: 36px;
+            /* overflow: hidden; */
+            /* z-index: 17; */
+            position: absolute;
+        }
+    }
+
+    &__activity {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+        width: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            padding-left: 50px;
+            padding-bottom: 20px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: 40px;
+            align-items: flex-start;
+
+            &__border {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &__span {
+                    width: 3px;
+                    height: 50px;
+                    background-color: variables.$grey2;
+                }
+                &__circle {
+                    border-radius: 50%;
+                    background-color: variables.$grey2;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10px;
+
+                &__item1 {
+                    color: variables.$text;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                &__item2 {
+                    color: variables.$grey3;
+                }
+            }
         }
     }
     

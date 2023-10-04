@@ -1,4 +1,5 @@
 import styles from '../../../styles/user.module.scss';
+import Child1 from './Child/Child1';
 
 const Frame2 = () => {
     return (  
@@ -20,6 +21,66 @@ const Frame2 = () => {
                 </div>
                 <div className={styles.frame2__content__nav__avatar}>
 
+                </div>
+            </div>
+            <Child1/>
+            <div className={styles.frame2__content__image}>
+                <div className={styles.frame2__content__image__orange}>
+                </div>
+                <div className={styles.frame2__content__image__yellow}>
+                </div>
+            </div>
+            <div className={styles.frame2__content__activity}>
+                <h4 className={styles.frame2__content__activity__title}>Lastest Activity</h4>
+                <div className={styles.frame2__content__activity__item}>
+                    <div className={styles.frame2__content__activity__item__border}>
+                        <div className={styles.frame2__content__activity__item__border__circle}>
+                        </div>
+                        <span className={styles.frame2__content__activity__item__border__span}>
+
+                        </span>
+                    </div>
+                    <div className={styles.frame2__content__activity__item__text}>
+                        <p className={styles.frame2__content__activity__item__text__item1}>Karen Hope moved task “User Research“ from On Progress to Done</p>
+                        <p className={styles.frame2__content__activity__item__text__item2}>2 March 2021, 13:45 PM</p>
+                    </div>
+                </div>
+                <div className={styles.frame2__content__activity__item}>
+                    <div className={styles.frame2__content__activity__item__border}>
+                        <div className={styles.frame2__content__activity__item__border__circle}>
+                        </div>
+                        <span className={styles.frame2__content__activity__item__border__span}>
+
+                        </span>
+                    </div>
+                    <div className={styles.frame2__content__activity__item__text}>
+                        <p className={styles.frame2__content__activity__item__text__item1}>Samantha William add new 4 attached files on task “Photo&apos;s Assets“</p>
+                        <p className={styles.frame2__content__activity__item__text__item2}>2 March 2021, 13:45 PM</p>
+                    </div>
+                </div>
+                <div className={styles.frame2__content__activity__item}>
+                    <div className={styles.frame2__content__activity__item__border}>
+                        <div className={styles.frame2__content__activity__item__border__circle}>
+                        </div>
+                        <span className={styles.frame2__content__activity__item__border__span}>
+
+                        </span>
+                    </div>
+                    <div className={styles.frame2__content__activity__item__text}>
+                        <p className={styles.frame2__content__activity__item__text__item1}>Tony Soap invite you in task “Wireframing“ and “Hi-fidelity“</p>
+                        <p className={styles.frame2__content__activity__item__text__item2}>2 March 2021, 13:45 PM</p>
+                    </div>
+                </div>
+                <div className={styles.frame2__content__activity__item}>
+                    <div className={styles.frame2__content__activity__item__border}>
+                        <div className={styles.frame2__content__activity__item__border__circle}>
+                        </div>
+                        
+                    </div>
+                    <div className={styles.frame2__content__activity__item__text}>
+                        <p className={styles.frame2__content__activity__item__text__item1}>Samantha William created new Task</p>
+                        <p className={styles.frame2__content__activity__item__text__item2}>2 March 2021, 13:45 PM</p>
+                    </div>
                 </div>
             </div>
         </div>
