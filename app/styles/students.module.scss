@@ -242,7 +242,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
+        padding-top: 10px;
 
         &__text {
             font-size: 13px;
@@ -253,6 +254,21 @@
 
         &__paginate {
             @extend .paginate;
+            & ul {
+                margin: 0;
+                & li {
+                    margin: 0 3px;
+                    & a {
+                        font-size: 12px;
+                        width: 13px;
+                        height: 13px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0.3rem;
+                    }
+                }
+            }
         }
     }
     

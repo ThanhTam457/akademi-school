@@ -1,6 +1,6 @@
 import styles from '../../styles/dashboard.module.scss'
-import Frame1 from './Child/Frame1';
-import Frame2 from './Child/Frame2';
+import Frame1 from './Child/Frame1/Frame1';
+import Frame2 from './Child/Frame2/Frame2';
 
 const Dashboard = () => {
     return ( 

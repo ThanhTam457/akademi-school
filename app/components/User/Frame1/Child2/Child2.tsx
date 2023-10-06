@@ -36,31 +36,31 @@ const Child2 = () => {
 
     return (  
         <div className={styles.frame1__content__child2}>
-            <div className={styles.frame1__content__child2__container}>
-                <div className={styles.frame1__content__child2__container__head}>
-                    <div className={styles.frame1__content__child2__container__head__text}>
+            <div className={styles.frame1__content__child2__container1}>
+                <div className={styles.frame1__content__child2__container1__head}>
+                    <div className={styles.frame1__content__child2__container1__head__text}>
                         <h4>Contacts</h4>
                         <p>You have 741 contacts</p>
                     </div>
-                    <button className={styles.frame1__content__child2__container__head__button}>
+                    <button className={styles.frame1__content__child2__container1__head__button}>
                         +
                     </button>
                 </div>
-                <input type="text" placeholder='Search here...' className={styles.frame1__content__child2__container__input} />
-                <div className={styles.frame1__content__child2__container__body}>
+                <input type="text" placeholder='Search here...' className={styles.frame1__content__child2__container1__input} />
+                <div className={styles.frame1__content__child2__container1__body}>
                     <ListContact contact={contact} />
                 </div>
-                <button className={styles.frame1__content__child2__container__button}>
+                <button className={styles.frame1__content__child2__container1__button}>
                     View more
                 </button>
             </div>
-            <div className={styles.frame1__content__child2__container}>
+            <div className={styles.frame1__content__child2__container2}>
                 <h4>Messages</h4>
-                <input type="text" placeholder='Search here...' className={styles.frame1__content__child2__container__input} />
-                <div className={styles.frame1__content__child2__container__body}>
+                <input type="text" placeholder='Search here...' className={styles.frame1__content__child2__container2__input} />
+                <div className={styles.frame1__content__child2__container2__body}>
                      <ListPeople border='none' people={people}/>
                 </div>
-                <button className={styles.frame1__content__child2__container__button}>
+                <button className={styles.frame1__content__child2__container2__button}>
                     View more
                 </button>
             </div>

@@ -212,6 +212,21 @@
 
     &__paginate {
         @extend .paginate;
+        & ul {
+            margin: 0;
+            & li {
+                margin: 0 3px;
+                & a {
+                    font-size: 12px;
+                    width: 13px;
+                    height: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.3rem;
+                }
+            }
+        }
     }
 
     &__data {

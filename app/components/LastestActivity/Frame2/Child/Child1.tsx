@@ -16,7 +16,7 @@ const Child1 = ({activity}: Props): React.ReactNode => {
             {activity.map((item, index) => {
                 return (
                     <div className={styles.frame2__content__listAct} key={index}>
-                        <div className={styles.frame2__content__listAct__left}>
+                         <div className={styles.frame2__content__listAct__left}>
                             <div className={styles.frame2__content__listAct__left__circles}>
                                 <div className={styles.frame2__content__listAct__left__circles__circle1}></div>
                                 <div className={styles.frame2__content__listAct__left__circles__circle2}></div>
@@ -32,7 +32,7 @@ const Child1 = ({activity}: Props): React.ReactNode => {
                                     <div className={styles.frame2__content__listAct__right__image__item} key={i}></div>
                                 ))}
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 )
             })}

@@ -1,6 +1,8 @@
+import Finance from "../components/Finance/Finance";
+
 const finance = () => {
     return ( 
-    <div>This is an finance page</div> 
+    <Finance />
     );
 }
  

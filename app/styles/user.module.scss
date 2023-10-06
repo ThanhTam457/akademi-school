@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-between;
 }
 
 .frame1__content{
@@ -17,12 +18,15 @@
     align-items: center;
     padding-left: 35px;
     padding-right: 35px;
+    flex: 1 1 auto;
+    width: -webkit-fill-available;
 
     &__left {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        width: inherit;
             &__nav {
                 display: flex;
                 flex-direction: row;
@@ -85,6 +89,7 @@
             position: relative;
             border-radius: 0 0 20px 20px;
             border: none;
+            flex: auto;
 
             &__row1 {
                 display: flex;
@@ -159,18 +164,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: stretch;
         width: -webkit-fill-available;
 
-        &__container {
+        &__container1 {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             background-color: variables.$white;
-            padding: 10px;
+            padding: 15px;
             margin: 20px 0;
             border-radius: 20px;
+            flex: auto;
+            margin-right: 5px;
             
 
             &__head {
@@ -220,6 +227,92 @@
                 justify-content: space-between;
                 align-items: center;
                 width: -webkit-fill-available;
+
+                & .listContact {
+                    padding: 10px;
+                }
+            }
+
+            &__button {
+                margin: 20px 0px;
+                border-radius: 40px;
+                background-color: variables.$purple-transparent;
+                padding: 15px;
+                color: variables.$purple;
+                border: none;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                width: inherit;
+                cursor: pointer;
+                width: 90%;
+            }
+        }
+
+        &__container2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: variables.$white;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 20px;
+            flex: auto;
+            margin-left: 5px;
+            
+
+            &__head {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: -webkit-fill-available;
+                padding: 20px 10px;
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 40px;
+                }
+
+                &__button {
+                    background-color: variables.$purple;
+                    font-weight: 600;
+                    border-radius: 50%;
+                    padding: 5px;
+                    font-size: 20px;
+                    color: variables.$white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                }
+            }
+
+            &__input {
+                width: 80%;
+                border-radius: 40px;
+                padding: 10px 20px 10px 20px;
+                margin: 20px 0 20px 0;
+                border: solid 1px variables.$grey2;
+                background-color: variables.$white;
+            }
+
+            &__body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: -webkit-fill-available;
+
+                & .listContact {
+                    padding: 10px;
+                }
             }
 
             &__button {
@@ -245,7 +338,6 @@
     flex-direction: column;
     align-items: center;
     background-color: variables.$white;
-    flex: auto;
     padding-right: 35px;
     width: min-content;
 
@@ -291,7 +383,7 @@
     }
 
     &__child1 {
-        margin: 0px 0px 20px 32px;
+        margin: 0px 0px 20px 50px;
         background-color: variables.$text;
         border-radius: 20px;
         color: variables.$white;
@@ -299,7 +391,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: left;
-        padding: 20px 20px;
+        padding: 10px;
         border: none;
 
         &__nav {
