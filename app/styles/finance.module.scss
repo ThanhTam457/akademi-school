@@ -181,6 +181,8 @@
         border-radius: 20px;
         border: none;
         padding: 10px;
+        width: -webkit-fill-available;
+        margin-left: 30px;
 
         &__title {
             padding-left: 15px;
@@ -193,9 +195,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100%;
 
             &__table {
                 padding: 0 5px;
+                width: 100%;
                 &__body {
                     &__row {
                         &__item {
@@ -204,7 +208,6 @@
                             &__container1 {
                                 display: flex;
                                 flex-direction: row;
-                                justify-content: space-between;
                                 align-items: center;
 
                                 &__icon {

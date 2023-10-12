@@ -14,7 +14,7 @@ const Frame2 = () => {
                     <div className={styles[`frame2__content__item__button--add`]}>
                         +
                     </div>
-                    New Student
+                    New Teacher
                 </button>
             </div>
         </div>

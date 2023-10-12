@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from '../../../../styles/students.module.scss';
 import Paginate from '@/app/components/Paginate/Paginate';
+import Link from 'next/link';
 
 const Frame3 = () => {
     interface IStudent {
@@ -51,9 +52,16 @@ const Frame3 = () => {
                 <tbody className={styles.frame3__content__table__body}>
                     {students.map((student, index) => {
                         return (
+                            
                             <tr key={index} className={styles.frame3__content__table__body__container}>
                                 <td className={styles.frame3__content__table__body__container__item}><input type='checkbox'></input></td>
-                                <td className={styles[`frame3__content__table__body__container__item--name`]}><div className={styles.frame3__content__table__body__container__item__avatar}></div>{student.name}</td>
+                                <td className={styles[`frame3__content__table__body__container__item--name`]}>
+                                    <div className={styles.frame3__content__table__body__container__item__avatar}>
+                                    </div>
+                                    <Link href={`/students/${student.id}`} key={index} style={{textDecoration: "none"}}>
+                                        {student.name}
+                                    </Link>
+                                </td>
                                 <td className={styles.frame3__content__table__body__container__item}>{student.id}</td>
                                 <td className={styles.frame3__content__table__body__container__item}>{student.date}</td>
                                 <td className={styles.frame3__content__table__body__container__item}>{student.parentName}</td>

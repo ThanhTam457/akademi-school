@@ -21,7 +21,7 @@ const MenuList = () => {
     }
 
     const menuList: iMenu[] = [
-        { logo: <HomeIcon />, name: 'Dashboard', link: '/' },
+        { logo: <HomeIcon />, name: 'Dashboard', link: '/dashboard' },
         { logo: <StudentIcon />, name: 'Students', link: '/students' },
         { logo: <TeacherIcon />, name: 'Teachers', link: '/teachers' },
         { logo: <EventIcon />, name: 'Event', link: '/event' },
@@ -38,7 +38,7 @@ const MenuList = () => {
         <div className={styles.menuList}>
             {menuList.map((item, index) => (
                 <div key={`menu-item-${index}`} className={styles.menuList__item}>
-                    <Link href={item.link} scroll={false} className={styles.menuList__item__link  + `${pathName === item.link ? " "+ styles["menuList__item__link--active"]: ""}` }>
+                    <Link href={item.link} scroll={false} className={styles.menuList__item__link  + `${pathName.includes(item.link) ? " "+ styles["menuList__item__link--active"]: ""}` }>
                         <div className={styles.menuList__item__logo}>
                             {item.logo}
                         </div>
