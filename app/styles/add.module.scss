@@ -110,6 +110,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                flex: auto;
 
                 &__container1 {
                     @extend .frame2__content__child1__body__container;
@@ -131,7 +132,7 @@
                     font-size: 12px;
                     align-items: center;
                     display: flex;
-                    margin-top: 10px;
+                    margin-bottom: 30px;
                 }
                 &__row {
                     display: flex;
@@ -165,7 +166,7 @@
                         &--special {
                             @extend .frame2__content__child1__body__container__row__input;
                             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                                top: -50px;
+                                top: -60px;
                             }
                         }
                     }
@@ -208,7 +209,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                flex: auto;
+                flex: 50%;
 
                 &__row {
                     display: flex;
@@ -221,11 +222,19 @@
                         color: variables.$text;
                         font-weight: 600;
                     }
+                    &__inputs {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                    }
                     &__input {
                         height: 40px;
                         border: 1px solid variables.$grey2;
                         padding: 0 15px;
                         border-radius: 7px;
+                        width: -webkit-fill-available;
                         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                             white-space:pre-line;  
                             color: variables.$grey3;

@@ -3,7 +3,7 @@ import styles from '../../../../styles/add.module.scss';
 const Frame1 = () => {
     return (  
         <div className={styles.frame1__content}>
-            <h3>Add New Student</h3>
+            <h3>Add New Teacher</h3>
             <div className={styles.frame1__content__item}>
                 <div className={styles.frame1__content__item__icons}>
                     <div className={styles.frame1__content__item__icon}>

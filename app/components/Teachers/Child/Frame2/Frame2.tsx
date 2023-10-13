@@ -1,5 +1,6 @@
 import DropdownIcon from '@/app/components/Logo/dropdownIcon';
 import styles from '../../../../styles/teachers.module.scss';
+import Link from 'next/link';
 
 const Frame2 = () => {
     return (  
@@ -10,12 +11,14 @@ const Frame2 = () => {
                     Newest
                     <DropdownIcon/>
                 </button>
-                <button className={styles[`frame2__content__item__button--filled`]}>
-                    <div className={styles[`frame2__content__item__button--add`]}>
-                        +
-                    </div>
-                    New Teacher
-                </button>
+                <Link href={`/teachers/add`} style={{textDecoration: "none"}}>
+                    <button className={styles[`frame2__content__item__button--filled`]}>
+                        <div className={styles[`frame2__content__item__button--add`]}>
+                            +
+                        </div>
+                        New Teacher
+                    </button>
+                </Link>
             </div>
         </div>
     );
