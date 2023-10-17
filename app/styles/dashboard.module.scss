@@ -145,6 +145,11 @@
             padding: 20px;
             margin-top: 35px;
             width: -webkit-fill-available;
+            
+            & canvas {
+                width: -webkit-fill-available !important;
+                height: 280px !important;
+            }
         }
 
         &__child3 {
@@ -264,6 +269,10 @@
                 &__title {
                     width: -webkit-fill-available;
                     padding: 20px;
+                }
+                & canvas {
+                    width: -webkit-fill-available !important;
+                    height: 300px !important;
                 }
             }
 
